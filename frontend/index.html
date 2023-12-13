@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div id="left-panel">
+        <div id="citySelection">
+            <label for="cityDropdown">城市:</label>
+            <select id="cityDropdown">
+                <!-- 设置默认值 -->
+                <option value="上海市" selected disabled>上海市</option>
+            </select>
+            <button onclick="loadCityData()">加载</button>
+        </div>
+        <div id="legend"></div> <!-- 图例容器 -->
+    </div>
+    <div id="separator"></div>
+    <div id="map"></div>
+</div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>

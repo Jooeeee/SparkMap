@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: stretch; /* 让左右两边的元素高度相等 */
+    margin: 20px;
+}
+
+#left-panel {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f0f0f0; /* 浅色背景色 */
+    border-radius: 5px; /* 可选：添加圆角 */
+}
+
+#separator {
+    width: 10px; /* 中间的分割线宽度 */
+    background-color: #ddd; /* 分割线颜色 */
+}
+
+#map {
+    flex: 1; /* 自动填充剩余空间 */
+    height: 500px;
+    margin-top: 20px;
+}
+
+#cityDropdownContainer {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#legend {
+    margin-top: 20px;
+}
+
+#legend {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* 允许图例项换行 */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 2px solid #555; /* 边框颜色 */
+    border-radius: 50%; /* 圆形边框 */
+}
+
+.legend-text {
+    font-size: 14px;
+}
