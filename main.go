@@ -20,7 +20,7 @@ func main() {
 	// API endpoint to get city list
 	r.GET("/api/cities", api.GetCityList)
 
-	r.Run(":8080")
+	r.Run(":80")
 }
 
 func init() {
