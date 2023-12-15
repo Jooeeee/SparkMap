@@ -4,12 +4,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
-// 将数据转换为 GeoJSON 格式
-var geoJsonData = {
-    type: 'FeatureCollection',
-    features: []
-};
-
 // 加载地图数据
 function loadMapData(data) {
     // 清除之前的地图数据
@@ -18,6 +12,12 @@ function loadMapData(data) {
             map.removeLayer(layer);
         }
     });
+    // 将数据转换为 GeoJSON 格式
+    var geoJsonData = {
+        type: 'FeatureCollection',
+        features: []
+    };
+
     var latSum=0;
     var lonSum=0;
     var cnt=0;
